@@ -1,0 +1,18 @@
+﻿sublime的快捷键：
+ctrl+L  选择整行(按住-继续选择下行)
+ctrl+shift+k 删除整行
+ctrl+shift+d 复制光标所在整行，插入在该行之前
+ctrl+m 光标移动至括号内开始或结束的位置
+ctrl+shift+m 选择括号内的内容(按住-继续选择父括号)
+ctrl+/ 注释整行(如已选择内容，同“ctrl+shift+/”效果)
+ctrl+shift+/ 注释已选择内容
+ctrl+space 自动完成(win与系统快捷键冲突，需修改)
+ctrl+shift+a 选择光标位置父标签对儿
+ctrl+enter 插入行后
+ctrl+shift enter 插入行前
+ctrl+kk 从光标处删除至行首
+ctrl+shift+up 与上行互换
+ctrl+shift+down 与下行互换
+shift+tab 去除缩进，需要先选中行
+
+dot -Tpdf allElectronicInformationGainOri.dot -o output.pdf

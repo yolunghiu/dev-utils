@@ -1,0 +1,21 @@
+ctrl + shift + up: 快速移动到函数名
+ctrl + shift + down: 快速移动到下一个函数名
+
+ctrl+shift+R 通过文件名快速查找工程内的文件（必记）
+
+ctrl+shift+alt+N 通过一个字符快速查找位置（必记）
+
+ctrl + end: js中可以从函数名直接跳到函数声明的结尾
+
+ctrl + alt + v: 在idea中根据函数返回值自动创建一个同类型的局部变量
+ctrl + alt + f: 在idea中根据函数返回值自动创建一个同类型的成员变量
+
+F4:Hierarchy，展示某个接口的继承结构
+ctrl + F3/o:快速选择类中的某个方法
+
+alt + F1 + 1: 查找当前文件在tree view中的位置
+ctrl+shift+F12 最大区域显示代码
+
+alt + y: 选中下一处出现的相同模式
+alt + shift + y: 取消选中
+ctrl + alt + y: 选中所有出现的

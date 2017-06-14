@@ -1,0 +1,13 @@
+alt + \: sidebar toggle focus
+ctrl + ↑/↓：上下移动某行
+ctrl + alt + b:格式化代码
+ctrl + shift + m:markdown preview
+ctrl + alt + o:快速创建文件或文件夹
+cmd-shift-D：复制当前行
+cmd-click：添加新的光标
+ctrl + e:选中重复出现的关键字
+alt + shift + right: 选中右边的单词
+alt + right: 移动到右边的单词
+ctrl-alt-,: select-inside-brackets
+
+markdown toc
