@@ -1,0 +1,32 @@
+[
+    // 删除当前行
+    { "keys": ["ctrl+d"], "command":"run_macro_file", "args": {"file":"Packages/Default/Delete Line.sublime-macro"} },
+    // 与上行互换
+    { "keys": ["alt+up"], "command":"swap_line_up" },
+    // 与下行互换
+    { "keys": ["alt+down"], "command":"swap_line_down" },
+    // 复制选中行到行后
+    { "keys": ["ctrl+down"], "command":"duplicate_line" },
+    { "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"} },
+    { "keys": ["ctrl+shift+c"], "command": "css_comb" },
+    { "keys": ["ctrl+b"], "command": "open_browser" },
+    // 自动提示、补全
+    { "keys": ["alt+/"], "command":"auto_complete" },
+    { "keys": ["alt+m"], "command": "markdown_preview", "args": { "target": "browser"} },
+
+    // vim配置
+    { "keys": ["alt+u"], "command": "scroll_lines_fixed", "args": {"amount": 1.0 } },  
+    { "keys": ["alt+d"], "command": "scroll_lines_fixed", "args": {"amount": -1.0 } },  
+    { "keys": ["pageup"], "command": "scroll_lines_fixed", "args" : {"by": "pages", "amount": 1.0 } },  
+    { "keys": ["pagedown"], "command": "scroll_lines_fixed", "args" : {"by": "pages", "amount": -1.0 } }, 
+    {
+        "keys": ["j", "j"],
+        "command": "exit_insert_mode",
+        "context":
+        [
+            { "key": "setting.command_mode", "operand": false },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    },
+
+]
