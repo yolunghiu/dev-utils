@@ -1,0 +1,5 @@
+ctrl+k: delete to the end
+ctrl+u: delete to the start
+ctrl+d: delete current char
+ctrl+l: clear screen
+ctrl+;: show recent 5 records clipboard
