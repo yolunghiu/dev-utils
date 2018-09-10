@@ -17,7 +17,6 @@
 - grep asdf 4   # 在文件4中查找asdf
 - ps -ef | grep tomcat    # 列出tomcat进程
 - kill -9 2977(tomcat进程号)    # 强制杀死tomcat进程
-- du -h filename    # 查看文件大小
 
 ## MySQL
 
@@ -25,10 +24,12 @@
 -	停止MySQL服务： sudo stop mysql
 -	修改 MySQL 的管理员密码： sudo mysqladmin -u root password newpassword
 
-## Memory
+## Memory and Disk
 
 - free -m   # 查看内存使用情况
 - df -h    # 查看磁盘使用情况
+- du -h filename    # 查看文件大小
+- du -h max-depth=1 # 查看当前文件夹下第一层子目录文件大小
 
 ## Network
 
@@ -39,6 +40,7 @@
 - ls | grep java
 - ls | grep -v java   # 输出不包含java的所有信息
 - ls | grep -E "*.java"   # 使用正则表达式
+- grep -r hello   # 查找文件内容
 
 
 
