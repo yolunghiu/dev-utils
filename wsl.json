@@ -1,0 +1,310 @@
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "defaultProfile": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+    "fontFace": "DejaVu Sans Mono",
+    "initialCols": 80,
+    "initialRows": 25,
+    "profiles": {
+      "defaults": {
+        // Put settings here that you want to apply to all profiles
+      },
+      "list": [
+        {
+          // Make changes here to the powershell.exe profile
+          "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+          "name": "Windows PowerShell",
+          "commandline": "powershell.exe",
+          "hidden": false,
+          "fontSize": 14,
+          "fontFace": "Fira Mono for Powerline",
+          "colorScheme": "Wombat"
+        },
+        {
+          "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+          "hidden": false,
+          "name": "Ubuntu-18.04",
+          "source": "Windows.Terminal.Wsl",
+          "fontSize": 14,
+          "fontFace": "Fira Mono for Powerline",
+          "colorScheme": "Wombat",
+          // "startingDirectory":"//wsl$/Ubuntu-18.04/home/liuhy"
+          "startingDirectory": "/mnt/c/Users/fangzhou/code"
+        },
+        {
+          "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+          "name": "cmd",
+          "hidden": true
+        },
+        {
+          "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+          "hidden": false,
+          "name": "Azure Cloud Shell",
+          "source": "Windows.Terminal.Azure"
+        }
+      ]
+    },
+    // Add custom color schemes to this array
+    "schemes": [
+      {
+        "name": "Wombat",
+        "black": "#000000",
+        "red": "#ff615a",
+        "green": "#b1e969",
+        "yellow": "#ebd99c",
+        "blue": "#5da9f6",
+        "purple": "#e86aff",
+        "cyan": "#82fff7",
+        "white": "#dedacf",
+        "brightBlack": "#313131",
+        "brightRed": "#f58c80",
+        "brightGreen": "#ddf88f",
+        "brightYellow": "#eee5b2",
+        "brightBlue": "#a5c7ff",
+        "brightPurple": "#ddaaff",
+        "brightCyan": "#b7fff9",
+        "brightWhite": "#ffffff",
+        "background": "#171717",
+        "foreground": "#dedacf"
+      },
+      {
+        "name": "Solarized Dark",
+        "foreground": "#FDF6E3",
+        "background": "#073642",
+        "colors": [
+          "#073642",
+          "#D30102",
+          "#859900",
+          "#B58900",
+          "#268BD2",
+          "#D33682",
+          "#2AA198",
+          "#EEE8D5",
+          "#002B36",
+          "#CB4B16",
+          "#586E75",
+          "#657B83",
+          "#839496",
+          "#6C71C4",
+          "#93A1A1",
+          "#FDF6E3"
+        ]
+      },
+      {
+        "name": "Solarized Light",
+        "foreground": "#073642",
+        "background": "#FDF6E3",
+        "colors": [
+          "#073642",
+          "#D30102",
+          "#859900",
+          "#B58900",
+          "#268BD2",
+          "#D33682",
+          "#2AA198",
+          "#EEE8D5",
+          "#002B36",
+          "#CB4B16",
+          "#586E75",
+          "#657B83",
+          "#839496",
+          "#6C71C4",
+          "#93A1A1",
+          "#FDF6E3"
+        ]
+      },
+      {
+        "name": "Ubuntu",
+        "foreground": "#EEEEEC",
+        "background": "#2C001E",
+        "colors": [
+          "#EEEEEC",
+          "#16C60C",
+          "#729FCF",
+          "#B58900",
+          "#268BD2",
+          "#D33682",
+          "#2AA198",
+          "#EEE8D5",
+          "#002B36",
+          "#CB4B16",
+          "#586E75",
+          "#657B83",
+          "#839496",
+          "#6C71C4",
+          "#93A1A1",
+          "#FDF6E3"
+        ]
+      },
+      {
+        "name": "ayu",
+        "black": "#000000",
+        "red": "#ff3333",
+        "green": "#b8cc52",
+        "yellow": "#e7c547",
+        "blue": "#36a3d9",
+        "purple": "#f07178",
+        "cyan": "#95e6cb",
+        "white": "#ffffff",
+        "brightBlack": "#323232",
+        "brightRed": "#ff6565",
+        "brightGreen": "#eafe84",
+        "brightYellow": "#fff779",
+        "brightBlue": "#68d5ff",
+        "brightPurple": "#ffa3aa",
+        "brightCyan": "#c7fffd",
+        "brightWhite": "#ffffff",
+        "background": "#0f1419",
+        "foreground": "#e6e1cf"
+      },
+      {
+        "name": "Kolorit",
+        "black": "#1d1a1e",
+        "red": "#ff5b82",
+        "green": "#47d7a1",
+        "yellow": "#e8e562",
+        "blue": "#5db4ee",
+        "purple": "#da6cda",
+        "cyan": "#57e9eb",
+        "white": "#ededed",
+        "brightBlack": "#1d1a1e",
+        "brightRed": "#ff5b82",
+        "brightGreen": "#47d7a1",
+        "brightYellow": "#e8e562",
+        "brightBlue": "#5db4ee",
+        "brightPurple": "#da6cda",
+        "brightCyan": "#57e9eb",
+        "brightWhite": "#ededed",
+        "background": "#1d1a1e",
+        "foreground": "#efecec"
+      }
+    ],
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": [
+      {
+        "command": {
+          "action": "newTab",
+          "index": 1
+        },
+        "keys": [
+          "alt+t"
+        ]
+      },
+      {
+        "command": "closePane",
+        "keys": [
+          "ctrl+w"
+        ]
+      },
+      {
+        "command": {
+          "action": "splitPane",
+          "split": "horizontal"
+        },
+        "keys": [
+          "alt+]"
+        ]
+      },
+      {
+        "command": {
+          "action": "splitPane",
+          "split": "vertical"
+        },
+        "keys": [
+          "alt+["
+        ]
+      },
+      {
+        "command": {
+          "action": "newTab",
+          "index": 0
+        },
+        "keys": [
+          "alt+p"
+        ]
+      },
+      {
+        "command": {
+          "action": "switchToTab",
+          "index": 0
+        },
+        "keys": [
+          "ctrl+1"
+        ]
+      },
+      {
+        "command": {
+          "action": "switchToTab",
+          "index": 1
+        },
+        "keys": [
+          "ctrl+2"
+        ]
+      },
+      {
+        "command": {
+          "action": "switchToTab",
+          "index": 2
+        },
+        "keys": [
+          "ctrl+3"
+        ]
+      },
+      {
+        "command": {
+          "action": "switchToTab",
+          "index": 3
+        },
+        "keys": [
+          "ctrl+4"
+        ]
+      },
+      {
+        "command": {
+          "action": "switchToTab",
+          "index": 4
+        },
+        "keys": [
+          "ctrl+5"
+        ]
+      },
+      {
+        "command": {
+          "action": "switchToTab",
+          "index": 5
+        },
+        "keys": [
+          "ctrl+6"
+        ]
+      },
+      {
+        "command": {
+          "action": "switchToTab",
+          "index": 6
+        },
+        "keys": [
+          "ctrl+7"
+        ]
+      },
+      {
+        "command": {
+          "action": "switchToTab",
+          "index": 7
+        },
+        "keys": [
+          "ctrl+8"
+        ]
+      },
+      {
+        "command": {
+          "action": "switchToTab",
+          "index": 8
+        },
+        "keys": [
+          "ctrl+9"
+        ]
+      }
+    ]
+  }
