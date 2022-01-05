@@ -6,3 +6,4 @@
     netmask 255.255.255.0
     dns-nameservers 8.8.8.8
     ```
+2. 临时配置域名解析：在`/etc/resolv.conf`文件中添加`nameserver 8.8.8.8`
