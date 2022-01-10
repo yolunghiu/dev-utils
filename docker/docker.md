@@ -1,5 +1,10 @@
 # Docker Notes
 
+## 安装
+
+1. 卸载旧版本：`sudo apt-get remove docker docker-engine docker.io containerd runc`
+2. 安装完成后，若出现权限问题，使用如下命令：`sudo chmod 666 /var/run/docker.sock`
+
 ## Commands
 
 1. 列出镜像列表: `docker images`
@@ -28,3 +33,15 @@
 
 1. 删除镜像: `docker rmi hello-world`
 2. resource: https://www.runoob.com/docker/docker-image-usage.html
+
+## demo
+
+1. 使用paddle镜像
+    - `nvidia-docker run --name paddle_docker -it -v $PWD:/paddle registry.baidubce.com/paddlepaddle/paddle:2.2.1-gpu-cuda10.2-cudnn7 /bin/bash`
+    - `--name paddle_docker`：设定Docker的名称，`paddle_docker`是自己设置的名称；
+    - `-v $PWD:/paddle`：指定将当前路径（PWD变量会展开为当前路径的绝对路径）挂载到容器内部的 `/paddle` 目录；
+2. 退出但不关闭容器：`Ctrl+p+q`
+3. 退出并关闭容器：`exit`，再次进入需要先`docker restart`
+4. 进入容器
+    - `docker attach hello`：exit之后该容器就stop了
+    - `docker exec -it hello /bin/bash`：exit之后该容器仍在运行
