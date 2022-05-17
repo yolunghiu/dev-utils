@@ -1,0 +1,1 @@
+cmake -D CMAKE_BUILD_TYPE=Release -D WITH_FFMPEG=ON -DBUILD_opencv_gapi=OFF -DBUILD_opencv_features2d=OFF -DBUILD_opencv_flann=OFF -DBUILD_opencv_ml=OFF -DBUILD_opencv_calib3d=OFF ..
