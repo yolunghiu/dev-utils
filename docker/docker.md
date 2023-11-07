@@ -45,3 +45,13 @@
 4. 进入容器
     - `docker attach hello`：exit之后该容器就stop了
     - `docker exec -it hello /bin/bash`：exit之后该容器仍在运行
+
+## 华为昇腾容器使用
+
+1. 命令
+    ```
+    docker run -it --device=/dev/davinci0 --device=/dev/davinci_manager --device=/dev/devmm_svm --device=/dev/hisi_hdc -v /usr/local/dcmi:/usr/local/dcmi -p 9999:9999 -u root -v /usr/local/Ascend/driver:/usr/local/Ascend/driver -v /usr/local/bin/npu-smi:/usr/local/bin/npu-smi -v /usr/local/Ascend/driver/lib64/:/usr/local/Ascend/driver/lib64/ -v /usr/local/Ascend/driver/tools/:/usr/local/Ascend/driver/tools/ 10.10.10.156:1180/fz-1/edge-atlas-yolov5-sim:v8 /bin/bash
+    ```
+2. 参数解释
+    - `-v 本地目录：容器中目录`建立映射
+    - `-u root`root登录
